@@ -1,0 +1,44 @@
+def vacuum_agent_2x2():
+    state = {
+        'A1': int(input("Enter state of A1 (0 for clean, 1 for dirty): ")),
+        'A2': int(input("Enter state of A2 (0 for clean, 1 for dirty): ")),
+        'B1': int(input("Enter state of B1 (0 for clean, 1 for dirty): ")),
+        'B2': int(input("Enter state of B2 (0 for clean, 1 for dirty): "))
+    }
+
+    location = input("Enter starting location (A1, A2, B1, B2): ").upper()
+    cost = 0
+
+    if all(state[loc] == 0 for loc in state):
+        print("All rooms clean. Turning vacuum off.")
+        print(f"Cost: {cost}")
+        print(state)
+        return
+
+    traversal_order = ['A1', 'A2', 'B2', 'B1']
+
+    while traversal_order[0] != location:
+        traversal_order.append(traversal_order.pop(0))
+
+    print(f"Starting cleaning at {location}")
+
+    for idx, loc in enumerate(traversal_order):
+        if idx == 0:
+            pass
+        else:
+            print(f"Moving vacuum to {loc}")
+            cost += 1
+
+        if state[loc] == 1:
+            print(f"Cleaned {loc}.")
+            state[loc] = 0
+            cost += 1  # cost for cleaning
+
+        print(f"Is {loc} clean now? (0 if clean, 1 if dirty): {state[loc]}")
+
+    print("Finished cleaning all rooms.")
+    print(f"Total cost: {cost}")
+    print(state)
+
+
+vacuum_agent_2x2()
