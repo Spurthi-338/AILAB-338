@@ -1,0 +1,22 @@
+Enter state of A1 (0 for clean, 1 for dirty): 1
+Enter state of A2 (0 for clean, 1 for dirty): 1
+Enter state of B1 (0 for clean, 1 for dirty): 1
+Enter state of B2 (0 for clean, 1 for dirty): 1
+Enter starting location (A1, A2, B1, B2): a1
+Starting cleaning at A1
+Cleaned A1.
+Is A1 clean now? (0 if clean, 1 if dirty): 0
+Moving vacuum to A2
+Cleaned A2.
+Is A2 clean now? (0 if clean, 1 if dirty): 0
+Moving vacuum to B2
+Cleaned B2.
+Is B2 clean now? (0 if clean, 1 if dirty): 0
+Moving vacuum to B1
+Cleaned B1.
+Is B1 clean now? (0 if clean, 1 if dirty): 0
+Finished cleaning all rooms.
+Total cost: 7
+{'A1': 0, 'A2': 0, 'B1': 0, 'B2': 0}
+
+spurthireddyp
