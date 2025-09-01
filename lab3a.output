@@ -1,0 +1,38 @@
+Goal reached!
+
+Step 0:
+283
+164
+705
+
+Step 1:
+283
+104
+765
+
+Step 2:
+203
+184
+765
+
+Step 3:
+023
+184
+765
+
+Step 4:
+123
+084
+765
+
+Step 5:
+123
+804
+765
+
+Moves: Up -> Up -> Left -> Down -> Right
+Total steps to goal: 5
+Total unique states visited: 35
+
+
+Spurthi Reddy P
