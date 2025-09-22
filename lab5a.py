@@ -1,3 +1,24 @@
+from itertools import permutations
+
+def compute_cost(state):
+    cost = 0
+    for i in range(4):
+        for j in range(i+1, 4):
+            if abs(state[i] - state[j]) == abs(i - j):
+                cost += 1
+    return cost
+
+def print_board(state):
+    board = ""
+    for row in range(4):
+        for col in range(4):
+            board += " Q " if state[col] == row else " . "
+        board += "\n"
+    return board
+
+def is_valid_permutation(state):
+    return sorted(state) == [0, 1, 2, 3]
+
 def main():
     all_perms = list(permutations(range(4)))
     print(f"Total permutations: {len(all_perms)}\n")
