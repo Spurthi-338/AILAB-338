@@ -1,0 +1,9 @@
+New fact inferred: Criminal(West)
+New fact inferred: SoldWeapons(West, Nono)
+
+Final facts:
+American(West)
+Hostile(Nono)
+Missiles(Nono)
+Criminal(West)
+SoldWeapons(West, Nono)
